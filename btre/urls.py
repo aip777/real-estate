@@ -7,6 +7,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', include('pages.urls')),
 
+    path('', include('sendemail.urls')),
+
     path('accounts/', include('accounts.urls')),
     path('contacts/', include('contacts.urls')),
     path('listings/', include('listings.urls')),

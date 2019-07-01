@@ -1,16 +1,27 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from listings.models import Listing
 from listings.choices import price_choices, bedroom_choices, state_choices
 # Create your views here.
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 from django.http import HttpResponse
 from realtors.models import Realtor
+from icontent.models import Content
+from profileband.models import Profileband
+from .models import Gallery
+from .forms import EmailCreateForm
 
 def index(request):
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)
+    mvp_content = Content.objects.all().filter(is_published=True)
+    profileband = Profileband.objects.all().filter(is_published=True)
 
     paginator = Paginator(listings, 6)
     page = request.GET.get('page')
+
+
+
+
+
 
     paged_listings = paginator.get_page(page)
     context = {
@@ -18,6 +29,9 @@ def index(request):
         'price_choices': price_choices,
         'bedroom_choices': bedroom_choices,
         'state_choices': state_choices,
+        'mvp_content': mvp_content,
+        'profileband': profileband,
+
     }
 
 
@@ -40,5 +54,41 @@ def about(request):
 
 
 def gallery(request):
+    gallery_video = Profileband.objects.all().filter(is_published=True)
+    gallery_content = Gallery.objects.all().filter(is_published=True)
 
-    return render(request, 'pages/gallery.html')
+    context = {
+
+        'gallery_video': gallery_video,
+        'gallery_content': gallery_content,
+    }
+
+    return render(request, 'pages/gallery.html', context)
+
+
+
+
+
+
+# def gallery(request):
+#
+#     context = {
+#
+#     }
+#
+#     return render(request, 'pages/gallery.html', context)
+
+
+def contactus(request):
+    form = EmailCreateForm(request.POST or None)
+    errors = None
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect("/")
+    if form.errors:
+        errors = form.errors
+    context = {
+        "form": form,
+    }
+
+    return render(request, 'pages/contact-us.html', context)

@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'realtors.apps.RealtorsConfig',
     'accounts.apps.AccountsConfig',
     'contacts.apps.ContactsConfig',
+    'sendemail.apps.SendemailConfig',
+    'icontent.apps.IcontentConfig',
+    'profileband.apps.ProfilebandConfig',
 ]
 
 MIDDLEWARE = [
@@ -148,3 +151,16 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+
+
+EMAIL_HOST='imap.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'lai.wasson5487@gmail.com'
+EMAIL_HOST_PASSWORD ='456123lw'
+EMAIL_USE_SSL=False
+EMAIL_USE_TLS= True
