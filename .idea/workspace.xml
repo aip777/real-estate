@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="590a4dde-cdfa-4cbe-94ab-7700ea0b3e8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/btre/static/img/fs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/btre/static/img/gs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/btre/static/img/sliderimg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/blogid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btre/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/btre/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btre/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/btre/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btre/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/btre/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icontent/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/icontent/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listings/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/listings/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profileband/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/profileband/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realtors/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/realtors/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/contact-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_navbar.html" afterDir="false" />
-    </list>
+    <list default="true" id="590a4dde-cdfa-4cbe-94ab-7700ea0b3e8a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
