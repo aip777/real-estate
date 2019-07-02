@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'sendemail.apps.SendemailConfig',
     'icontent.apps.IcontentConfig',
     'profileband.apps.ProfilebandConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [

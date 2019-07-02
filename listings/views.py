@@ -29,7 +29,7 @@ def listing(request, listing_id ):
         'listing': listing
     }
 
-    return render(request, 'listings/listing.html', context,)
+    return render(request, 'listings/listing.html', context)
 
 
 def search(request):

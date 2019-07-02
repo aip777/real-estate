@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+
+{% block title %} | Blog {% endblock %}
+
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="text-warning">{{ blog_object.title_one }}</h1>
+          <p class="lead">
+            <i class="fas fa-map-marker"></i> {{ blog_object.list_date }}  </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+<!--  <section id="bc" class="mt-3">-->
+<!--    <div class="container">-->
+<!--      <nav>-->
+<!--        <ol class="breadcrumb">-->
+<!--          <li class="breadcrumb-item">-->
+<!--            <a href="{% url 'index' %}">Home</a>-->
+<!--          </li>-->
+<!--          <li class="breadcrumb-item">-->
+<!--            <a href="{% url 'listings' %}">Listings</a>-->
+<!--          </li>-->
+<!--          <li class="breadcrumb-item active">{{ listing.title }}</li>-->
+<!--        </ol>-->
+<!--      </nav>-->
+<!--    </div>-->
+<!--  </section>-->
+
+  <!-- Alerts -->
+  {% include 'partials/_alerts.html' %}
+
+  <!-- Listing -->
+  <section id="listing" class="py-4">
+    <div class="container">
+      <a href="{% url 'blogview' %}" class="btn btn-danger mb-4">Back To Blog</a>
+      <div class="row">
+        <div class="col-md-9">
+          <!-- Home Main Image -->
+          <img src="{{ blog_object.photo_main.url }}" alt="" class="img-main img-fluid mb-3">
+          <!-- Thumbnails -->
+          <div class="row mb-5 thumbs">
+            {% if listing.photo_1 %}
+            <div class="col-md-2">
+              <a href="{{ blog_object.photo_1.url }}" data-lightbox="home-images">
+                <img src="{{ blog_object.photo_1.url }}" alt="" class="img-fluid">
+              </a>
+            </div>
+            {% endif %}
+            {% if blog_object.photo_2 %}
+            <div class="col-md-2">
+              <a href="{{ blog_object.photo_2.url }}" data-lightbox="home-images">
+                <img src="{{ blog_object.photo_2.url }}" alt="" class="img-fluid">
+              </a>
+            </div>
+            {% endif %}
+            {% if blog_object.photo_3 %}
+            <div class="col-md-2">
+              <a href="{{ blog_object.photo_3.url }}" data-lightbox="home-images">
+                <img src="{{ blog_object.photo_3.url }}" alt="" class="img-fluid">
+              </a>
+            </div>
+            {% endif %}
+            {% if blog_object.photo_4 %}
+            <div class="col-md-2">
+              <a href="{{ blog_object.photo_4.url }}" data-lightbox="home-images">
+                <img src="{{ blog_object.photo_4.url }}" alt="" class="img-fluid">
+              </a>
+            </div>
+            {% endif %}
+            {% if blog_object.photo_5 %}
+            <div class="col-md-2">
+              <a href="{{ blog_object.photo_5.url }}" data-lightbox="home-images">
+                <img src="{{ blog_object.photo_5.url }}" alt="" class="img-fluid">
+              </a>
+            </div>
+            {% endif %}
+            {% if blog_object.photo_6 %}
+            <div class="col-md-2">
+              <a href="{{ blog_object.photo_6.url }}" data-lightbox="home-images">
+                <img src="{{ blog_object.photo_6.url }}" alt="" class="img-fluid">
+              </a>
+            </div>
+            {% endif %}
+          </div>
+          <!-- Fields -->
+
+          <!-- Description -->
+          <div class="row mb-5">
+            <div class="col-md-12">
+                {{ blog_object.description_one }}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+{% endblock %}

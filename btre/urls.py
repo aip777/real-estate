@@ -9,6 +9,7 @@ urlpatterns = [
 
     path('', include('sendemail.urls')),
 
+    path('blog/', include('blog.urls')),
     path('accounts/', include('accounts.urls')),
     path('contacts/', include('contacts.urls')),
     path('listings/', include('listings.urls')),

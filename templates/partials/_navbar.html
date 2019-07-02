@@ -2,6 +2,9 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
+
+
+
       <a class="navbar-brand" href="{% url 'index' %}">
         <img src="{% static 'img/logo-l.png' %}" class="logo" alt="">
       </a>
@@ -17,7 +20,7 @@
               class="nav-item mr-3"
                 {% endif %}
           >
-            <a class="nav-link" href="{% url 'index' %}">Home</a>
+            <a class="btn btn-success btn-rounded" href="{% url 'index' %}">Home</a>
           </li>
 
 
@@ -27,7 +30,7 @@
                   class="nav-item mr-3"
                   {% endif %}>
 
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="btn btn-success btn-rounded" href="{% url 'about' %}">About</a>
           </li>
 
 
@@ -38,7 +41,7 @@
                   {% else %}
                   class="nav-item mr-3"
                   {% endif %}>
-            <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
+            <a class="btn btn-success btn-rounded" href="{% url 'listings' %}">Featured Listings</a>
           </li>
 
           <li {% if 'gallery' in request.path %}
@@ -46,9 +49,19 @@
                   {% else %}
                   class="nav-item mr-3"
                   {% endif %}>
-            <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+            <a class="btn btn-success btn-rounded" href="{% url 'gallery' %}">Gallery</a>
           </li>
 
+
+
+            <li {% if 'blog' in request.path %}
+                  class="nav-item active mr-3"
+                  {% else %}
+                  class="nav-item mr-3"
+                  {% endif %}>
+
+            <a class="btn btn-success btn-rounded" href="{% url 'blogview' %}"> Blog </a>
+          </li>
 
            <li {% if 'contactus' in request.path %}
                   class="nav-item active mr-3"
@@ -56,7 +69,7 @@
                   class="nav-item mr-3"
                   {% endif %}>
 
-            <a class="nav-link" href="{% url 'contactus' %}"> Contact Us </a>
+            <a class="btn btn-info btn-rounded" href="{% url 'contactus' %}"> Contact Us </a>
           </li>
 
 
@@ -71,7 +84,7 @@
               class="nav-item mr-3"
             {% endif %}
             >
-              <a class="nav-link" href="{% url 'dashboard' %}">
+              <a class="btn btn-success btn-rounded" href="{% url 'dashboard' %}">
                Welcome {{ user.username }}</a>
             </li>
             <li class="nav-item mr-3">
@@ -91,7 +104,7 @@
               class="nav-item mr-3"
             {% endif %}
             >
-              <a class="nav-link" href="{% url 'register' %}">
+              <a class="btn btn-success btn-rounded" href="{% url 'register' %}">
                 <i class="fas fa-user-plus"></i> Register</a>
             </li>
             <li
@@ -101,7 +114,7 @@
               class="nav-item mr-3"
             {% endif %}
             >
-              <a class="nav-link" href="{% url 'login' %}">
+              <a class="btn btn-success btn-rounded" href="{% url 'login' %}">
                 <i class="fas fa-sign-in-alt"></i>
 
                 Login</a>
