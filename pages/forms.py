@@ -3,6 +3,7 @@ from django import forms
 from .models import Email
 
 
+
 # class EmailCreateForm(forms.Form):
 #     email_name = forms.CharField(max_length=100, null=True, blank=True)
 #     from_email = forms.EmailField(max_length=100, null=True, blank=True)
@@ -25,6 +26,7 @@ class EmailCreateForm(forms.ModelForm):
             'from_email',
             'phone',
             'message',
+            'document',
         ]
 
     def clean_email_name(self):
@@ -34,3 +36,9 @@ class EmailCreateForm(forms.ModelForm):
 
 
         return email_name
+
+
+
+
+
+

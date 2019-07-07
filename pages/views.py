@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, redirect
 from listings.models import Listing
 from listings.choices import price_choices, bedroom_choices, state_choices
 # Create your views here.
@@ -9,6 +9,11 @@ from icontent.models import Content
 from profileband.models import Profileband
 from .models import Gallery
 from .forms import EmailCreateForm
+
+
+from django.core.files.storage import FileSystemStorage
+
+
 
 def index(request):
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)
@@ -81,18 +86,42 @@ def gallery(request):
 
 def contactus(request):
     form = EmailCreateForm(request.POST or None)
+
+
     errors = None
     if form.is_valid():
         form.save()
-        return HttpResponseRedirect("/")
+        return redirect("/")
     if form.errors:
         errors = form.errors
     context = {
         "form": form,
     }
 
+
+
     return render(request, 'pages/contact-us.html', context)
 
 
 
+# def upload(request):
+#     context = {}
+#     if request.method == 'POST':
+#         uploaded_file = request.FILES['document']
+#         fs = FileSystemStorage()
+#         name = fs.save(uploaded_file.name, uploaded_file)
+#         context['url'] = fs.url(name)
+#
+#     return render(request, 'upload.html', context)
+#
+#
+# def upload_book(request):
+#     if request.method == 'POST':
+#         form = BookForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('#/')
+#     else:
+#         form = BookForm()
+#     return render(request, 'upload_book.html', { 'form': form })
 

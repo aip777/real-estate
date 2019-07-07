@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!--  <h2>Upload book</h2>-->
+<!--  <form method="post" enctype="multipart/form-data">-->
+<!--    {% csrf_token %}-->
+<!--    {{ form }}-->
+<!--    <button type="submit" class="btn btn-primary">Upload book</button>-->
+<!--  </form>-->
+
+
+
+
+
+<link rel="stylesheet" href="{% static 'css/band.css' %}">
+
+
+
+<!--  <h2>Upload book</h2>-->
+<!--  <form method="post" enctype="multipart/form-data">-->
+<!--    {% csrf_token %}-->
+<!--    {{ form }}-->
+<!--    <button type="submit" class="btn btn-primary">Upload book</button>-->
+<!--  </form>-->
+
+
+
+<link rel="stylesheet" href="{% static 'css/band.css' %}">
+
+
+
+<section id="contact">
+			<div class="section-content">
+				<h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+				<h3>Registration</h3>
+			</div>
+			<div class="contact-section">
+			<div class="container">
+				<form action="." method="post" enctype="multipart/form-data" > {% csrf_token %}
+					<div class="col-md-6 form-line">
+                        <div class="form-group">
+					    	<label for="Name">Name</label>
+					    	<input type="tel" class="form-control" name="name" id="name" placeholder=" Name ">
+			  			</div>
+
+			  			<div class="form-group">
+			  				<label for="exampleInputUsername">Title</label>
+					    	<input type="text" class="form-control" name="title" id="title" placeholder="Title">
+				  		</div>
+
+
+
+					  	<div class="form-group">
+					    	<label for="Autho">Autho</label>
+					    	<input type="tel" class="form-control" name="author" id="author" placeholder=" author ">
+			  			</div>
+
+                        <div class="form-group">
+					    	<label for="Phone">Phone</label>
+					    	<input type="tel" class="form-control" name="phone" id="phone" placeholder=" Phone ">
+			  			</div>
+
+                        <div class="form-group">
+					    	<label for="Address">Address</label>
+					    	<input type="tel" class="form-control" name="address" id="address" placeholder=" Address ">
+			  			</div>
+
+
+
+			  		</div>
+
+<!--                          uploaded -->
+
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon01">PDF</span>
+                      </div>
+                      <div class="custom-file">
+                        <input type="file"  name="pdf">
+                      </div>
+                    </div>
+
+
+
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon02">Image</span>
+                      </div>
+                      <div class="custom-file">
+                        <div class="custom-file">
+                        <input type="file"  name="cover">
+                      </div>
+                      </div>
+                    </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-send-message" value="Send">
+                        </div>
+
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+{% endblock %}

@@ -48,8 +48,13 @@ INSTALLED_APPS = [
     'icontent.apps.IcontentConfig',
     'profileband.apps.ProfilebandConfig',
     'blog.apps.BlogConfig',
+    'core.apps.CoreConfig',
+
+
 ]
 
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

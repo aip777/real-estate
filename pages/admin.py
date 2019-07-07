@@ -19,8 +19,4 @@ admin.site.register(Gallery, GalleryAdmin)
 
 from .models import Email
 
-
-
-
-
 admin.site.register(Email)

@@ -23,3 +23,7 @@ class Email(models.Model):
       phone = models.CharField(max_length=100, null=True, blank=True)
 
       message = models.CharField(max_length=100, null=True, blank=True)
+
+      document = models.FileField(upload_to='documents/', null=True, blank=True)
+
+

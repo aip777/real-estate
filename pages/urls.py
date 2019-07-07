@@ -10,4 +10,7 @@ urlpatterns = [
     path('gallery/', views.gallery, name = 'gallery'),
     path('contactus/', views.contactus, name = 'contactus'),
 
+    # path('upload/', views.upload, name='upload'),
+    # path('books/upload/', views.upload_book, name='upload_book'),
+
 ]
