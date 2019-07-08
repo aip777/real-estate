@@ -1,0 +1,76 @@
+
+
+
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} | Contact Us {% endblock %}
+
+
+
+
+
+
+<!--  end contact css-->
+
+{% block content %}
+
+     <link rel="stylesheet" href="{% static 'css/band.css' %}">
+
+
+
+<section id="contact">
+			<div class="section-content">
+				<h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
+				<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+				<h2>Phone: 01817773206 </h2>
+			</div>
+			<div class="contact-section">
+			<div class="container">
+				<form action="." method="post"> {% csrf_token %}
+					<div class="col-md-6 form-line">
+			  			<div class="form-group">
+			  				<label for="exampleInputUsername">Your name</label>
+					    	<input type="text" class="form-control" name="email_name" id="" placeholder="Name">
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="exampleInputEmail">Email Address</label>
+					    	<input type="email" class="form-control" name="from_email" id="exampleInputEmail" placeholder="Email">
+					  	</div>
+					  	<div class="form-group">
+					    	<label for="telephone">Mobile No.</label>
+					    	<input type="tel" class="form-control" name="phone" id="telephone" placeholder=" Mobile ">
+			  			</div>
+			  		</div>
+			  		<div class="col-md-6">
+			  			<div class="form-group">
+			  				<label for ="description"> Message</label>
+			  			 	<textarea  class="form-control" name="message" id="description" placeholder="Enter Your Message"></textarea>
+			  			</div>
+
+<!--						<div class="form-group">-->
+<!--			  				<label for ="file"> file</label>-->
+<!--			  			 	<input type="file" class="form-control" name="document" id="document" placeholder=" Upload ">-->
+<!--			  			</div>-->
+<!--			  			<div>-->
+
+<!--			  				<button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>-->
+<!--			  			</div>-->
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+                        </div>
+
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+
+
+
+
+{% endblock %}
