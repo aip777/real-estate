@@ -368,7 +368,7 @@ h3 {
 }
 
 form {
-  width: 80%;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -856,7 +856,7 @@ div.tagsinput {
 .dashboard #container #content-related{
     position:absolute;
     right:0;
-    top:70px;
+    top:120px;
     bottom:0;
     height:100%;
     width:25%;

@@ -1,6 +1,6 @@
 {% extends 'admin/base.html' %}
 {% load static %}
-
+{% block title %}BT Real Estate{% endblock %}
 {% block branding %}
   <h1 id="head">
      <img  src="{% static 'img/logo.png' %}" alt="BT Real Estate" height="50" width="80" class="brand_img"> Real Estate</h1>
@@ -8,8 +8,6 @@
 {% block extrastyle %}
 <!--  <link rel="stylesheet" href="{% static 'css/admin.css' %}">-->
 <!--  <link rel="stylesheet" href="{% static 'css/base.css' %}">-->
-  <link rel="stylesheet" href="{% static 'css/cjws_style.css' %}">
+  <link rel="stylesheet" href="{% static 'admin/css/cjws_style.css' %}">
 <!--  <link rel="stylesheet" href="{% static 'css/admin_new.css' %}">-->
 {% endblock %}
-
-
