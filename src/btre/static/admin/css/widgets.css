@@ -339,6 +339,8 @@ p.file-upload {
 
 .file-upload a {
     font-weight: normal;
+    background-color:yellowgreen;
+    font-size:18px;
 }
 
 .file-upload .deletelink {

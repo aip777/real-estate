@@ -17,19 +17,10 @@ body {
 
 a:link, a:visited {
 
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  border-radius: 12px;
 
 }
+
+
 
 a:focus, a:hover {
     color: #036;
@@ -296,7 +287,11 @@ tr.alt {
 }
 
 .row1 {
-    background: #fff;
+    background-color: #fff;
+}
+
+.field-name{
+    display:block;
 }
 
 .row2 {
@@ -508,7 +503,6 @@ input[type=button][disabled].default {
 .module {
     border: none;
     margin-bottom: 40px;
-
     width: 350px;
 
 }
@@ -659,16 +653,28 @@ div.system-message p.system-message-title {
 /* BREADCRUMBS */
 
 div.breadcrumbs {
-    background: #79aec8;
+    background: #b59222;
     padding: 10px 40px;
     border: none;
-    font-size: 14px;
+    font-size: 22px;
     color: #c4dce8;
     text-align: left;
+    border-radius:10px;
+    width: 1720px;
 }
 
 div.breadcrumbs a {
-    color: #fff;
+    background-color: #eb2f06;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
 }
 
 div.breadcrumbs a:focus, div.breadcrumbs a:hover {
@@ -760,6 +766,7 @@ a.deletelink:focus, a.deletelink:hover {
     background-repeat: no-repeat;
     background-position: right 7px center;
     padding-right: 26px;
+    background-color: #c23616;
 }
 
 .object-tools a.viewsitelink, .object-tools a.golink {
@@ -850,7 +857,8 @@ table#change-history tbody th {
     background: #16471e;
     color: #ffc;
     overflow: hidden;
-    border-radius: 10px
+    border-radius: 10px;
+
 }
 
 #header a:link, #header a:visited {
@@ -901,7 +909,7 @@ table#change-history tbody th {
     padding: 0;
     margin: 0 0 0 20px;
     font-weight: 300;
-    font-size: 11px;
+    font-size: 16px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-align: right;
@@ -1006,3 +1014,5 @@ table#change-history tbody th {
 .popup #header {
     padding: 10px 20px;
 }
+
+

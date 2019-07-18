@@ -2,14 +2,21 @@
 
 /* FORM ROWS */
 
+
 .form-row {
     overflow: hidden;
     padding: 10px;
     font-size: 13px;
     border-bottom: 1px solid #eee;
-    width:250%;
+    width:420%;
     background: #3c6382;
     border-radius: 8px;
+
+    position: relative;
+
+    font-size: 16px;
+    text-align: center;
+    border-radius: 0;
 }
 
 .form-row img, .form-row input {
@@ -74,11 +81,12 @@ form ul.inline li {
     display: block;
     padding: 4px 10px 0 0;
     float: left;
-    width:150px;
+    width:350px;
     word-wrap: break-word;
     line-height: 1;
     background:red;
     border-radius: 50px;
+    font-size: x-large;
     text-align: center;
 }
 
@@ -105,7 +113,7 @@ form ul.inline li {
 .aligned .form-row input {
     margin-bottom: 0;
     background: beige;
-    width:40%;
+    width:60%;
 }
 
 .colMS .aligned .vLargeTextField, .colMS .aligned .vXMLLargeTextField {
@@ -156,6 +164,12 @@ form .aligned select + div.help {
 form .aligned ul li {
     list-style: none;
 }
+
+.file-upload{
+        
+        display:block;
+}
+
 
 form .aligned table p {
     margin-left: 0;
@@ -540,3 +554,5 @@ form .related-widget-wrapper ul {
 .clearable-file-input input {
     margin-top: 0;
 }
+
+
