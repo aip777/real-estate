@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'profileband.apps.ProfilebandConfig',
     'blog.apps.BlogConfig',
     'core.apps.CoreConfig',
+    'status.apps.StatusConfig',
+    'rest_framework',
 
 
 ]

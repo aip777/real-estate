@@ -12,6 +12,9 @@ urlpatterns = [
 
     path('', include('core.urls')),
 
+    path(r'api/status/', include('status.api.urls')),
+    path(r'api/listings/', include('listings.api.urls')),
+
     path('blog/', include('blog.urls')),
     path('accounts/', include('accounts.urls')),
     path('contacts/', include('contacts.urls')),
