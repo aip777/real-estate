@@ -721,6 +721,8 @@ a.deletelink:focus, a.deletelink:hover {
     float: right;
     position: relative;
     margin-top: -48px;
+    width:400px;
+    font-weight:400;
 }
 
 .form-row .object-tools {
@@ -892,7 +894,7 @@ table#change-history tbody th {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #ff4d4d;
   border: none;
   border-radius: 20px;
 

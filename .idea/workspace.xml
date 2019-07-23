@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="590a4dde-cdfa-4cbe-94ab-7700ea0b3e8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/cfe_pure_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/cfe_rest_framework_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/img-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btre/restconf/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btre/restconf/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btre/static/js/gallery.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/api/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/api/serializers.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/api/shell_examples.py" afterDir="false" />
@@ -26,13 +26,22 @@
       <change afterPath="$PROJECT_DIR$/src/status/models.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/status/tests.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/status/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/cfe_rest_framework_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/cfe_rest_framework_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/btre/static/admin/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/admin/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/static/admin/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/admin/css/forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/btre/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listings/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/listings/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/accounts/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/accounts/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/admin/app_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/app_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/admin/base_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/base_site.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/blog/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/listings/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/listings/listings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/pages/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pages/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pages/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/cfe_rest_framework_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+            <state relative-caret-position="378">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -55,54 +64,71 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/listings/api/serializers.py">
+        <entry file="file://$PROJECT_DIR$/src/templates/blog/blogid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1053" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/blog/blog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="57" column="62" lean-forward="true" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="82" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/listings/listing.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/base.css">
+        <entry file="file://$PROJECT_DIR$/src/templates/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6259">
-              <caret line="864" column="16" lean-forward="true" selection-start-line="864" selection-start-column="16" selection-end-line="864" selection-end-column="16" />
+            <state relative-caret-position="338">
+              <caret line="188" column="86" selection-start-line="188" selection-start-column="86" selection-end-line="188" selection-end-column="86" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/listings/api/views.py">
+        <entry file="file://$PROJECT_DIR$/src/templates/listings/listings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            <state relative-caret-position="419">
+              <caret line="77" column="86" selection-start-line="77" selection-start-column="86" selection-end-line="77" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/blog/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-279">
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/listings/api/urls.py">
+        <entry file="file://$PROJECT_DIR$/src/btre/restconf/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="972">
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/listings/models.py">
+        <entry file="file://$PROJECT_DIR$/src/btre/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="459">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#1#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,15 +146,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.inline-group h2</find>
-      <find>Recent actions</find>
-      <find>model</find>
-      <find>40,000</find>
-      <find>compon</find>
       <find>index_boot</find>
       <find>.module h2</find>
       <find>.inline-group</find>
-      <find>#branding h1</find>
       <find>thead th a:link, thead th a:visited</find>
       <find>#changelist-filter a</find>
       <find>form</find>
@@ -142,7 +162,6 @@
       <find>a:link</find>
       <find>.form-row</find>
       <find>.module table</find>
-      <find>.dashboard .module table th</find>
       <find>div.breadcrumbs</find>
       <find>file-upload</find>
       <find>.file-upload a</find>
@@ -150,6 +169,13 @@
       <find>div.breadcrumb</find>
       <find>content</find>
       <find>changelist</find>
+      <find>.dashboard .module table th</find>
+      <find>#header a:link, #header a:visited</find>
+      <find>Listing.objects.</find>
+      <find>#branding h1</find>
+      <find>.object-tools</find>
+      <find>#showcase-inner::before</find>
+      <find>more</find>
     </findStrings>
     <replaceStrings>
       <replace>#795548</replace>
@@ -167,16 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/templates/bootstrap/register.html" />
-        <option value="$PROJECT_DIR$/src/templates/bootstrap/tables.html" />
-        <option value="$PROJECT_DIR$/src/templates/bootstrap/utilities-animation.html" />
-        <option value="$PROJECT_DIR$/src/templates/bootstrap/utilities-border.html" />
-        <option value="$PROJECT_DIR$/src/templates/bootstrap/utilities-color.html" />
-        <option value="$PROJECT_DIR$/src/templates/bootstrap/utilities-other.html" />
-        <option value="$PROJECT_DIR$/src/templates/base_boot.html" />
-        <option value="$PROJECT_DIR$/src/templates/bootstrap/index.html" />
-        <option value="$PROJECT_DIR$/src/btre/static/css/css/sb-admin-2.min.css" />
-        <option value="$PROJECT_DIR$/src/btre/static/css/css/sb-admin-2.css" />
         <option value="$PROJECT_DIR$/src/btre/static/css/admin.css" />
         <option value="$PROJECT_DIR$/src/btre/static/css/admin_new.css" />
         <option value="$PROJECT_DIR$/src/btre/static/css/cjws_style.css" />
@@ -203,21 +219,31 @@
         <option value="$PROJECT_DIR$/src/test/app1.py" />
         <option value="$PROJECT_DIR$/src/btre/static/admin/css/fonts.css" />
         <option value="$PROJECT_DIR$/src/btre/static/admin/css/widgets.css" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/base.css" />
         <option value="$PROJECT_DIR$/src/btre/static/admin/css/forms.css" />
-        <option value="$PROJECT_DIR$/src/btre/settings.py" />
         <option value="$PROJECT_DIR$/src/status/models.py" />
-        <option value="$PROJECT_DIR$/src/btre/urls.py" />
         <option value="$PROJECT_DIR$/src/status/api/views.py" />
         <option value="$PROJECT_DIR$/src/listings/forms.py" />
-        <option value="$PROJECT_DIR$/src/listings/api/serializers.py" />
         <option value="$PROJECT_DIR$/src/templates/admin/app_index.html" />
         <option value="$PROJECT_DIR$/src/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/src/templates/admin/base.html" />
         <option value="$PROJECT_DIR$/src/listings/api/urls.py" />
+        <option value="$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/src/listings/api/serializers.py" />
+        <option value="$PROJECT_DIR$/src/listings/models.py" />
+        <option value="$PROJECT_DIR$/src/templates/accounts/dashboard.html" />
+        <option value="$PROJECT_DIR$/src/btre/settings.py" />
         <option value="$PROJECT_DIR$/src/listings/api/views.py" />
+        <option value="$PROJECT_DIR$/src/templates/base.html" />
+        <option value="$PROJECT_DIR$/src/btre/static/js/gallery.js" />
+        <option value="$PROJECT_DIR$/src/templates/pages/gallery.html" />
+        <option value="$PROJECT_DIR$/src/btre/static/admin/css/base.css" />
+        <option value="$PROJECT_DIR$/src/btre/urls.py" />
+        <option value="$PROJECT_DIR$/src/btre/restconf/main.py" />
         <option value="$PROJECT_DIR$/scripts/cfe_rest_framework_api.py" />
+        <option value="$PROJECT_DIR$/src/templates/blog/blog.html" />
+        <option value="$PROJECT_DIR$/src/templates/listings/listings.html" />
+        <option value="$PROJECT_DIR$/src/btre/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/templates/pages/index.html" />
       </list>
     </option>
   </component>
@@ -245,11 +271,6 @@
             <path>
               <item name="venv" type="b2602c69:ProjectViewProjectNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -271,69 +292,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="btre" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="btre" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="venv" type="b2602c69:ProjectViewProjectNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="listings" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="venv" type="b2602c69:ProjectViewProjectNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="listings" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="photos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="photos" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="photos" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="07" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="photos" type="462c0819:PsiDirectoryNode" />
-              <item name="2019" type="462c0819:PsiDirectoryNode" />
-              <item name="07" type="462c0819:PsiDirectoryNode" />
-              <item name="21" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -453,131 +425,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/changelists.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7382">
-          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/cjws_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="479" column="1" selection-start-line="479" selection-start-column="1" selection-end-line="479" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/widgets.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="341" column="33" selection-start-line="341" selection-start-column="33" selection-end-line="341" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/forms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/status/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/status/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/status/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/status/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/cfe_pure_api.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/status/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="89" selection-start-line="18" selection-start-column="89" selection-end-line="18" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/status/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/status/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/status/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/listings/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="20" lean-forward="true" selection-start-column="2" selection-end-line="45" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/edit_inline/stacked.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/admin/edit_inline/tabular.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30" />
@@ -679,13 +526,6 @@
         <state relative-caret-position="-30" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/admin/base_site.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -714,22 +554,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/listings/api/serializers.py">
+    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/listings/models.py">
+    <entry file="file://$PROJECT_DIR$/src/listings/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="864">
+          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -741,30 +578,169 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1170">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/listings/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/listings/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/accounts/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/btre/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="177" column="9" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="65" column="91" lean-forward="true" selection-start-line="65" selection-start-column="91" selection-end-line="65" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/btre/restconf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/listings/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        <state relative-caret-position="-2997">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/cfe_rest_framework_api.py">
+    <entry file="file://$PROJECT_DIR$/src/templates/pages/gallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="504">
+          <caret line="19" column="93" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/btre/static/js/gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6259">
-          <caret line="864" column="16" lean-forward="true" selection-start-line="864" selection-start-column="16" selection-end-line="864" selection-end-column="16" />
+        <state relative-caret-position="364">
+          <caret line="724" column="20" selection-start-line="724" selection-start-column="20" selection-end-line="724" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/btre/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+          <folding>
+            <element signature="e#1#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/btre/restconf/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/cfe_rest_framework_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/blog/blogid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1053" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-279">
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/btre/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/listings/listings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="77" column="86" selection-start-line="77" selection-start-column="86" selection-end-line="77" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/blog/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="57" column="62" lean-forward="true" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/listings/listing.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="188" column="86" selection-start-line="188" selection-start-column="86" selection-end-line="188" selection-end-column="86" />
         </state>
       </provider>
     </entry>

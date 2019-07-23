@@ -1,5 +1,7 @@
 import json
-from rest_framework import generics, mixins
+from rest_framework import generics, mixins, permissions
+
+from rest_framework.authentication import SessionAuthentication
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
@@ -24,8 +26,7 @@ class ListingAPIDetailView(
     mixins.UpdateModelMixin,
     mixins.DestroyModelMixin,
     generics.RetrieveAPIView):
-    permission_classes = []
-    authentication_classes = []
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     serializer_class = StatusSerializer
     queryset = Listing.objects.all()
     lookup_field = 'id'
@@ -50,13 +51,10 @@ class ListingAPIDetailView(
 
 class ListingAPIView(
     mixins.CreateModelMixin,
-    mixins.UpdateModelMixin,
-    mixins.DestroyModelMixin,
     generics.ListAPIView):
-    permission_classes = []
-    authentication_classes = []
-    serializer_class = StatusSerializer
-    passed_id = None
+    permission_classes              = [permissions.IsAuthenticatedOrReadOnly]
+    serializer_class                = StatusSerializer
+    passed_id                       = None
 
     def get_queryset(self):
         request = self.request
@@ -69,22 +67,8 @@ class ListingAPIView(
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
 
-    # def perform_create(self, serializer):
-    #     serializer.save(user=self.request.user)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
 
 
 # import json

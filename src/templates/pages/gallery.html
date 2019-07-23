@@ -3,32 +3,31 @@
 
 {% load static %}
 
-{% block title %} | About Us {% endblock %}
+{% block title %} | Gallery {% endblock %}
 
 {% block content %}
 
+<!-- Page Content -->
+<div class="container">
 
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Thumbnail Gallery</h1>
 
+  <hr class="mt-2 mb-5">
 
-
-
-
-
-
-
-
-
-
-
-<div class="view">
-    {% for gallery_new in gallery_content %}
-  <img src="{{ gallery_new.gallery_image.url }}" class="img-fluid" alt="placeholder">
-  <div class="mask flex-center waves-effect waves-light rgba-teal-strong">
+  <div class="row text-center text-lg-left">
+{% for gallery_new in gallery_content %}
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{ gallery_new.gallery_image.url }}" class="d-block mb-4 h-100" target="_blank">
+            <img class="img-fluid img-thumbnail" src="{{ gallery_new.gallery_image.url }}" alt="">
+          </a>
+    </div>
+      {% endfor %}
 
   </div>
-     {% endfor %}
+
 </div>
-
-
+<!-- /.container -->
 
 {% endblock %}
+
+

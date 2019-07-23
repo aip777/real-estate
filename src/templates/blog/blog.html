@@ -38,7 +38,9 @@
       <div class="row">
         {% if blog_new %}
           {% for blog in blog_new %}
+        <a href="{% url 'blogid' blog.id %}" >
           <div class="col-md-6 col-lg-4 mb-4">
+
               <div class="card listing-preview">
                 <img class="card-img-top" src="{{ blog.photo_main.url }}" alt="">
                 <div class="card-img-overlay">
@@ -53,10 +55,10 @@
 
                   </div>
 
-                  <a href="{% url 'blogid' blog.id %}" class="btn btn-primary btn-block">More Info</a>
+                  <a href="{% url 'blogid' blog.id %}" class="btn btn-outline-info">View Article</a>
                 </div>
               </div>
-            </div>
+            </div> </a>
           {% endfor %}
         {% else %}
           <div class="col-md-12">

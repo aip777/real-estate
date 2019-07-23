@@ -1,8 +1,26 @@
 from django.db import models
+from django.conf import settings
 from datetime import datetime
 from realtors.models import Realtor
 
+
+def upload_status_image(instance, filename):
+  return "status/{user}/{filename}".format(user=instance.user, filename=filename)
+
+
+class StatusQuerySet(models.QuerySet):
+  pass
+
+
+class StatusManager(models.Manager):
+  def get_queryset(self):
+    return StatusQuerySet(self.model, using=self._db)
+
+
+
+
 class Listing(models.Model):
+  user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.DO_NOTHING)
   realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
   title = models.CharField(max_length=200)
   address = models.CharField(max_length=200)
@@ -26,5 +44,7 @@ class Listing(models.Model):
   is_published = models.BooleanField(default=True)
   list_date = models.DateTimeField(default=datetime.now, blank=True)
 
+  objects = StatusManager()
+
   def __str__(self):
-    return self.title
+    return str(self.title)[:50]

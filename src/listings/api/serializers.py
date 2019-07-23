@@ -30,18 +30,18 @@ class StatusSerializer(serializers.ModelSerializer):
             'is_published',
             'list_date',
         ]
-
+        read_only_fields = ['user']
         # def validate_content(self, value):
         #     if len(value) > 10000:
         #         raise serializers.ValidationError("This is wayy too long.")
         #     return value
 
         def validate(self, data):
-            content = data.get("content", None)
-            if content == "":
-                content = None
-            image = data.get("image", None)
-            if content is None and image is None:
-                raise serializers.ValidationError("Content or image is required.")
+            title = data.get("title", None)
+            if title == "":
+                title = None
+            photo_main = data.get("photo_main", None)
+            if title is None and photo_main is None:
+                raise serializers.ValidationError("title or image is required.")
             return data
 
