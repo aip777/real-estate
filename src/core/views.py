@@ -58,7 +58,7 @@ class Home(TemplateView):
 
 
 class BookListView(LoginRequiredMixin, PermissionRequiredMixin, ListView):
-    login_url = '/accounts/login'
+    login_url = '/accounts/login/'
     permission_required = "auth.change_user"
 
     model = Book

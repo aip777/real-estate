@@ -45,7 +45,6 @@
             <th scope="col">ID</th>
             <th scope="col">Property</th>
             <th scope="col">View Listing</th>
-            <th scope="col">Property Realtor</th>
 
               </tr>
 
@@ -58,10 +57,12 @@
 
                     <td>{{ contact.id }}</td>
                     <td>{{ contact.listing }}</td>
-                    <td>{{ contact.listing }}</td>
+
                     <td>
                       <a class="btn btn-light" href="{% url 'listing' contact.listing_id %}">View Listing</a>
                     </td>
+
+
                   </tr>
                 {% endfor %}
               </tbody>

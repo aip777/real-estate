@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
 {% block content %}
 
 {% block content_header %}
@@ -11,7 +13,7 @@
   </p>
     </div>
 
-{% endblock %}
+{% endblock content_header %}
 
   <table class="table mb-0">
     <thead>
@@ -50,4 +52,4 @@
       {% endfor %}
     </tbody>
   </table>
-{% endblock %}
+{% endblock    %}

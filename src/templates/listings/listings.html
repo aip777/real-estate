@@ -37,10 +37,15 @@
       <div class="row">
         {% if listings %}
           {% for listing in listings %}
+
         <a href="{% url 'listing' listing.id %}">
           <div class="col-md-6 col-lg-4 mb-4">
               <div class="card listing-preview">
-                <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="">
+
+                    {% if listing.photo_main_one %}
+                <img class="card-img-top" src='{{ listing.photo_main_one.url }}' alt="" >
+                  {% endif %}
+
                 <div class="card-img-overlay">
                   <h2>
                     <span class="badge badge-secondary text-white">${{ listing.price | intcomma }}</span>

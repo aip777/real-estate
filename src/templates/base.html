@@ -28,14 +28,13 @@
 </head>
 
 <body>
-  <!-- Top Bar -->
+
   {% include 'partials/_topbar.html' %}
-  <!-- NavBar -->
+
   {% include 'partials/_navbar.html' %}
 
-    <!-- Main Content -->
-  {% block content %} {% endblock %}
-  <!-- Footer -->
+  {% block content %} {% endblock  %}
+
 
 
 
@@ -47,9 +46,6 @@
   <script src="{% static 'js/lightbox.min.js' %} "></script>
   <script src="{% static 'js/main.js' %} "></script>
   <script src="{% static 'js/gallery.js' %} "></script>
-
-
-
 </body>
 
 </html>

@@ -10,7 +10,11 @@
 {% block breadcrumbs %}{% endblock %}
 
 {% block content %}
+
 <div id="content-main">
+
+
+
 
 {% if app_list %}
     {% for app in app_list %}
@@ -24,6 +28,8 @@
             {% if model.admin_url %}
                 <th scope="row"><a href="{{ model.admin_url }}">{{ model.name }}</a></th>
             {% else %}
+
+
                 <th scope="row">{{ model.name }}</th>
             {% endif %}
 
@@ -83,4 +89,5 @@
             {% endif %}
     </div>
 </div>
+
 {% endblock %}

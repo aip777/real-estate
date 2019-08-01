@@ -5,12 +5,23 @@
       <change afterPath="$PROJECT_DIR$/src/btre/restconf/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/btre/restconf/main.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/btre/static/js/gallery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/btre/static/sample.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crudcsv/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crudcsv/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crudcsv/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crudcsv/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crudcsv/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crudcsv/views.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/api/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/api/serializers.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/api/shell_examples.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/api/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/api/views.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/listings/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/media/photos/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/media/photos/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/media/photos/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/media/photos/3.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/status/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/status/admin.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/status/api/__init__.py" afterDir="false" />
@@ -26,20 +37,535 @@
       <change afterPath="$PROJECT_DIR$/src/status/models.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/status/tests.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/status/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/crud/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/crud/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/crud/fileupload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/crud/upload_csv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/blog-single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/contact_process.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/gallery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/add.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/c6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/cat-post/cat-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/cat-post/cat-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/cat-post/cat-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/causes/causes-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/causes/causes-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/causes/causes-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/feature-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/latest-post/l-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/latest-post/l-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/latest-post/l-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/latest-post/l-post-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/main-blog/m-blog-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/main-blog/m-blog-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/main-blog/m-blog-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/main-blog/m-blog-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/main-blog/m-blog-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/next.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/popular-post/post1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/popular-post/post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/popular-post/post3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/popular-post/post4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/post-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/post-img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/blog/prev.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/gallery/g1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/gallery/g2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/gallery/g3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/gallery/g4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/gallery/g5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/gallery/g6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/gallery/g7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/bed-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/card-blog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/card-blog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/card-blog3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/contact-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/down-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/explore1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/explore2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/explore3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/explore4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/explore5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/explore6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/header-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/play-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/special.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/testimonial1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/testimonial2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/testimonial3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/video-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/video-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/welcomeBanner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/welcomeBanner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/img/home/welcomeBanner3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/properties.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_accomodation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_btn.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_home.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_social-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/scss/theme/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/bootstrap/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/fontawesome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/jquery.ajaxchimp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/jquery/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/linericon/fonts/Linearicons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/linericon/fonts/Linearicons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/linericon/fonts/Linearicons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/linericon/fonts/Linearicons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/linericon/fonts/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/linericon/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/magnefic-popup/jquery.magnific-popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/magnefic-popup/magnific-popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/mail-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/nice-select/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/nice-select/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/owl-carousel/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/owl-carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/owl-carousel/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/superfish.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/Italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/agenda.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/alarm-clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/align-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/align-justify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/align-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/align-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/anchor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/android.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/angle-double-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/angle-double-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/angle-double-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/angle-double-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/angle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/angle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/angle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/angle-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/announcement.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/archive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-circle-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-circle-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-circle-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-circle-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-top-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-top-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrows-corner.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrows-horizontal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/arrows-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/back-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/back-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/bar-chart-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/bar-chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/basketball.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/blackboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/bolt-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/bolt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/bookmark-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/bookmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/briefcase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/brush-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/brush.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/car.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/check-box.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/clip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/clipboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/cloud-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/cloud-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/cloud.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/comment-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/comments-smiley.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/comments.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-backward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-eject.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-forward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-pause.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-record.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-shuffle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-skip-backward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-skip-forward.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/control-stop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/credit-card.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/css3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/cup.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/cut.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/dashboard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/desktop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/direction-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/direction.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/dribbble.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/dropbox-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/dropbox.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/drupal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/envelope.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/eraser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/exchange-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/export.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/eye.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/face-sad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/face-smile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/files.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/filter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/flag-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/flag-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/flickr-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/flickr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/folder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/fullscreen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/gallery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/game.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/gift.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/hand-drag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/hand-open.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/hand-point-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/hand-point-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/hand-point-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/hand-point-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/hand-stop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/harddrive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/harddrives.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/headphone-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/headphone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/heart-broken.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/heart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/help-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/help.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/html5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/hummer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/id-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/import.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/infinite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/info-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/ink-pen.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/joomla.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/jsfiddle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/key.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layers-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layers.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-accordion-list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-accordion-merged.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-accordion-separated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-column2-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-column2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-column3-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-column3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-column4-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-column4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-cta-btn-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-cta-btn-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-cta-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-cta-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-cta-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-grid2-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-grid2-thumb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-grid2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-grid3-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-grid3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-grid4-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-grid4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-line-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-list-large-image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-list-post.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-list-thumb-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-list-thumb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-center-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-center.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-left-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-overlay-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-overlay-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-overlay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-right-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-media-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-menu-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-menu-separated.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-menu-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-placeholder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-sidebar-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-sidebar-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-sidebar-none.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-sidebar-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-slider-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-slider.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-tab-min.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-tab-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-tab-window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-width-default-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-width-default.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout-width-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/layout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/light-bulb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/line-dashed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/line-dotted.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/line-double.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/linkedin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/linux.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/list-ol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/location-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/location-pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/loop.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/magnet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/map-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/map.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/marker-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/marker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/medall-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/medall.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/menu-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/microphone-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/microphone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/microsoft-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/microsoft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/minus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/money.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/more-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/more.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/mouse-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/mouse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/music-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/music.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/na.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/new-window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/notepad.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/package.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/paint-bucket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/paint-roller.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/palette.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/panel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/paragraph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pencil-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pencil-alt2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pie-chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pin-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pin2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pinterest-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pinterest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/plug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/power-off.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/printer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/pulse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/quote-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/quote-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/receipt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/reddit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/reload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/rocket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/rss-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/rss.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/ruler-alt-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/ruler-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/ruler-pencil.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/ruler.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/save-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/save.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/server.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/settings.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/share-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/share.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/sharethis-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/sharethis.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shield.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shift-left-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shift-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shift-right-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shift-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shopping-cart-full.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shopping-cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/shortcode.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/signal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/skype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/slice.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/smallcap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/soundcloud.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/split-h.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/split-v-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/split-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/spray.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/stack-overflow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/stamp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/stats-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/stats-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/support.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/tablet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/tag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/target.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/text.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/themify-favicon-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/themify-favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/themify-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/thought.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/thumb-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/thumb-up.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/ticket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/time.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/timer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/trello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/truck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/tumblr-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/tumblr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/twitter-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/underline.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/unlink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/unlock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/uppercase.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/user.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/vector.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/video-camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/video-clapper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/view-grid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/view-list-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/view-list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/vimeo-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/vimeo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/volume.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/wallet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/wand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/wheelchair.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/widget-alt.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/widget.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/widgetized.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/wordpress.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/world.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/write.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/yahoo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/zip.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/zoom-in.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/SVG/zoom-out.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/Themify IconFonts 5-23-2014.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/demo-files/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/fonts/themify.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/fonts/themify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/ie7/ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/ie7/ie7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/templates/seapalace/vendors/themify-icons/themify-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/cfe_rest_framework_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/cfe_rest_framework_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/static/admin/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/admin/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/static/admin/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/admin/css/forms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/btre/static/admin/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/admin/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/btre/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icontent/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/icontent/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icontent/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/icontent/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listings/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/listings/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/listings/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listings/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/listings/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listings/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/listings/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/0.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/0_BlGIRrM.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/books/covers/eeff_ZuiI53L.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/books/pdfs/asdfdffdfdffd_t8zLd1g.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/ged.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/ged_ntQQaRX.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/media/index.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/accounts/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/accounts/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/admin/app_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/app_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/admin/base_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/base_site.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/blog/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/blog/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/core/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/core/book_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/core/class_book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/core/class_book_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/listings/listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/listings/listings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/pages/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pages/contact-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/pages/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pages/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pages/index.html" afterDir="false" />
     </list>
@@ -49,93 +575,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/cfe_rest_framework_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/blog/blogid.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1053" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/blog/blog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="57" column="62" lean-forward="true" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/listings/listing.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/templates/pages/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="188" column="86" selection-start-line="188" selection-start-column="86" selection-end-line="188" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/listings/listings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="77" column="86" selection-start-line="77" selection-start-column="86" selection-end-line="77" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/blog/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-279">
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/btre/restconf/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/btre/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-              <folding>
-                <element signature="e#1#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -144,108 +583,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>index_boot</find>
-      <find>.module h2</find>
-      <find>.inline-group</find>
-      <find>thead th a:link, thead th a:visited</find>
-      <find>#changelist-filter a</find>
-      <find>form</find>
-      <find>#changelist</find>
-      <find>#changelist table thead th</find>
-      <find>a:focus</find>
-      <find>site</find>
-      <find>.object-tools a.viewsitelink</find>
-      <find>.module</find>
-      <find>.aligned label</find>
-      <find>a:link</find>
-      <find>.form-row</find>
-      <find>.module table</find>
-      <find>div.breadcrumbs</find>
-      <find>file-upload</find>
-      <find>.file-upload a</find>
-      <find>div.breadcrumbs a</find>
-      <find>div.breadcrumb</find>
-      <find>content</find>
-      <find>changelist</find>
-      <find>.dashboard .module table th</find>
-      <find>#header a:link, #header a:visited</find>
-      <find>Listing.objects.</find>
-      <find>#branding h1</find>
-      <find>.object-tools</find>
-      <find>#showcase-inner::before</find>
-      <find>more</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>#795548</replace>
-      <replace>#30336b</replace>
-      <replace>#111112</replace>
-      <replace>#130f40</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/templates/admin</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/btre/static/css/admin.css" />
-        <option value="$PROJECT_DIR$/src/btre/static/css/admin_new.css" />
-        <option value="$PROJECT_DIR$/src/btre/static/css/cjws_style.css" />
-        <option value="$PROJECT_DIR$/src/templates/admin/object_history.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/login.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/invalid_setup.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/delete_selected_confirmation.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/delete_confirmation.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/change_list.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/change_form.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/base_site_boot.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/500.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/404.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/index_old_boot.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/index_boot.html" />
-        <option value="$PROJECT_DIR$/lib/python3.6/site-packages/pip/_vendor/distlib/locators.py" />
-        <option value="$PROJECT_DIR$/src/pages/views.py" />
-        <option value="$PROJECT_DIR$/src/templates/admin/index.html" />
-        <option value="$PROJECT_DIR$/src/blog/admin.py" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/cjws_style.css" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/changelists.css" />
-        <option value="$PROJECT_DIR$/src/test/test.py" />
-        <option value="$PROJECT_DIR$/src/test/data.json" />
-        <option value="$PROJECT_DIR$/src/test/app1.py" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/fonts.css" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/widgets.css" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/forms.css" />
-        <option value="$PROJECT_DIR$/src/status/models.py" />
-        <option value="$PROJECT_DIR$/src/status/api/views.py" />
-        <option value="$PROJECT_DIR$/src/listings/forms.py" />
-        <option value="$PROJECT_DIR$/src/templates/admin/app_index.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/base_site.html" />
-        <option value="$PROJECT_DIR$/src/templates/admin/base.html" />
-        <option value="$PROJECT_DIR$/src/listings/api/urls.py" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/src/listings/api/serializers.py" />
-        <option value="$PROJECT_DIR$/src/listings/models.py" />
-        <option value="$PROJECT_DIR$/src/templates/accounts/dashboard.html" />
-        <option value="$PROJECT_DIR$/src/btre/settings.py" />
-        <option value="$PROJECT_DIR$/src/listings/api/views.py" />
-        <option value="$PROJECT_DIR$/src/templates/base.html" />
-        <option value="$PROJECT_DIR$/src/btre/static/js/gallery.js" />
-        <option value="$PROJECT_DIR$/src/templates/pages/gallery.html" />
-        <option value="$PROJECT_DIR$/src/btre/static/admin/css/base.css" />
-        <option value="$PROJECT_DIR$/src/btre/urls.py" />
-        <option value="$PROJECT_DIR$/src/btre/restconf/main.py" />
-        <option value="$PROJECT_DIR$/scripts/cfe_rest_framework_api.py" />
-        <option value="$PROJECT_DIR$/src/templates/blog/blog.html" />
-        <option value="$PROJECT_DIR$/src/templates/listings/listings.html" />
-        <option value="$PROJECT_DIR$/src/btre/static/css/style.css" />
-        <option value="$PROJECT_DIR$/src/templates/pages/index.html" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="165" />
@@ -253,88 +592,31 @@
     <option name="width" value="1657" />
     <option name="height" value="807" />
   </component>
+  <component name="ProjectId" id="1OUtMFlAfDn8pyaFRjGEhePnGPQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="btre" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="btre" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="btre" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="venv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/templates" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/templates" />
+      <recent name="$PROJECT_DIR$/src/templates/listings" />
+      <recent name="$PROJECT_DIR$/src/media/media/photos" />
+      <recent name="$PROJECT_DIR$/src/btre/static" />
+      <recent name="$PROJECT_DIR$/src/crudcsv" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/templates/crud" />
       <recent name="$PROJECT_DIR$/src/btre/static/admin/css" />
       <recent name="$PROJECT_DIR$/src/btre/static/css" />
       <recent name="$PROJECT_DIR$/src/templates" />
       <recent name="$PROJECT_DIR$/src/btre/static" />
-      <recent name="$PROJECT_DIR$/src/btre/static/js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/scripts" />
-      <recent name="$PROJECT_DIR$/src/listings" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -368,381 +650,23 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="194000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="901" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25245902" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32642487" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32816538" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25245902" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32642487" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/edit_inline/tabular.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/includes/fieldset.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/change_form_object_tools.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/change_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/change_list_object_tools.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/change_list_results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/date_hierarchy.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/delete_confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/delete_selected_confirmation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/filter.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/object_history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/pagination.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/popup_response.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/prepopulated_fields_js.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/search_form.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/submit_line.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/invalid_setup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1164" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/change_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="83" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/actions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/base_site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="84" column="6" lean-forward="true" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/admin/app_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/listings/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/listings/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1170">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/listings/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/listings/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="22" column="80" selection-start-line="22" selection-start-column="80" selection-end-line="22" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/accounts/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="60" column="50" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="177" column="9" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="65" column="91" lean-forward="true" selection-start-line="65" selection-start-column="91" selection-end-line="65" selection-end-column="91" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/restconf/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/listings/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2997">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/pages/gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="19" column="93" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="48" column="2" selection-start-line="48" selection-start-column="2" selection-end-line="48" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/js/gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/admin/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="724" column="20" selection-start-line="724" selection-start-column="20" selection-end-line="724" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding>
-            <element signature="e#1#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/restconf/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/cfe_rest_framework_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/blog/blogid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1053" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/btre/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="55" column="27" lean-forward="true" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/listings/listings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="77" column="86" selection-start-line="77" selection-start-column="86" selection-end-line="77" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/blog/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="57" column="62" lean-forward="true" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/listings/listing.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="188" column="86" selection-start-line="188" selection-start-column="86" selection-end-line="188" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

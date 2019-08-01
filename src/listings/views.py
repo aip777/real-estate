@@ -3,7 +3,7 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 # Create your views here.
 from .choices import price_choices, bedroom_choices, state_choices
 from .models import Listing
-
+from datetime import datetime
 from django.http import HttpResponse
 
 def listings(request):
@@ -74,7 +74,3 @@ def search(request):
       }
 
       return render(request, 'listings/search.html', context)
-
-
-
-

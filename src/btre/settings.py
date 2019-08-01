@@ -50,7 +50,9 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'core.apps.CoreConfig',
     'status.apps.StatusConfig',
+
     'rest_framework',
+    'crudcsv',
 
 
 ]

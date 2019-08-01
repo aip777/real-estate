@@ -26,4 +26,7 @@ class Email(models.Model):
 
       document = models.FileField(upload_to='documents/', null=True, blank=True)
 
+      def __str__(self):
+          return self.email_name
+
 
