@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="590a4dde-cdfa-4cbe-94ab-7700ea0b3e8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/btre/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/btre/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/settings/production.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

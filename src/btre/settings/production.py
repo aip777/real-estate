@@ -21,7 +21,7 @@ EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'lai.wasson5487@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-EMAIL_USE_SSL=False
+EMAIL_USE_SSL= False
 EMAIL_USE_TLS= True
 
 # Quick-start development settings - unsuitable for production
