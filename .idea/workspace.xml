@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="590a4dde-cdfa-4cbe-94ab-7700ea0b3e8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/media/media/photos/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/media/photos/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/media/photos/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/media/photos/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/media/photos/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/media/photos/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/media/photos/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/btre/static/admin/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/static/admin/css/forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contacts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contacts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contacts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listings/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/listings/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/listings/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/listings/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/media/photos/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/media/photos/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/media/photos/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/media/media/photos/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/accounts/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/accounts/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/crud/upload_csv.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/crud/upload_csv.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/listings/listing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/listings/listing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/listings/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/listings/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/btre/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/btre/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/btre/settings/production.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

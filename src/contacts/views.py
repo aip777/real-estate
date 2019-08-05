@@ -49,7 +49,7 @@ def contact(request):
 
 def delete(request, pk):
   if request.method == 'POST':
-    book = Contact.objects.get(pk=pk)
-    book.delete()
+    delete_item = Contact.objects.get(pk=pk)
+    delete_item.delete()
   return redirect('/accounts/dashboard/')
 
