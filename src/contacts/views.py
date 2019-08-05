@@ -38,3 +38,18 @@ def contact(request):
     messages.success(request, 'Your request has been submitted, a realtor will get back to you soon')
     return redirect('/listings/'+listing_id)
 
+
+
+# def delete(request, id):
+#     member = Contact.objects.get(id=id)
+#     member.delete()
+#     messages.error(request, 'Member was deleted successfully!')
+#     return redirect('/accounts/dashboard/')
+
+
+def delete(request, pk):
+  if request.method == 'POST':
+    book = Contact.objects.get(pk=pk)
+    book.delete()
+  return redirect('/accounts/dashboard/')
+

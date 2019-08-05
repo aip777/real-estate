@@ -26,11 +26,6 @@ class EmailAdmin(admin.ModelAdmin):
   search_fields = ('email_name', 'from_email', 'phone', )
   list_per_page = 25
 
-  def has_add_permission(self, request):
-    return False
 
-
-  def has_delete_permission(self, request, obj=None):
-    return False
 
 admin.site.register(Email, EmailAdmin)

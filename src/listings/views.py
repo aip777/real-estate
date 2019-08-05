@@ -1,8 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 # Create your views here.
 from .choices import price_choices, bedroom_choices, state_choices
 from .models import Listing
+from django.contrib import messages, auth
 from datetime import datetime
 from django.http import HttpResponse
 
@@ -74,3 +75,4 @@ def search(request):
       }
 
       return render(request, 'listings/search.html', context)
+

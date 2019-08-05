@@ -45,12 +45,11 @@
             <th scope="col">ID</th>
             <th scope="col">Property</th>
             <th scope="col">View Listing</th>
+            <th scope="col">Delete</th>
 
               </tr>
 
               <tbody>
-
-
 
                 {% for contact in contacts %}
                   <tr>
@@ -61,6 +60,15 @@
                     <td>
                       <a class="btn btn-light" href="{% url 'listing' contact.listing_id %}">View Listing</a>
                     </td>
+
+
+                    <td>
+                          <form method="post" action="{% url 'delete' contact.pk %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                          </form>
+                    </td>
+
 
 
                   </tr>
