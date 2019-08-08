@@ -27,6 +27,7 @@ class Content(models.Model):
 
 
 
+  logo_main = models.ImageField(upload_to='photos/%Y/%m/%d/',  blank=True)
   slider_photos_main = models.ImageField(upload_to='photos/%Y/%m/%d/',  blank=True)
   slider_photo_one = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)
   slider_photo_two = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)

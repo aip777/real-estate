@@ -9,6 +9,7 @@ dj-database-url==0.5.0
 Django==2.1.1
 django-baton==1.5.2
 django-filter==2.2.0
+django-heroku==0.3.1
 djangorestframework==3.10.1
 djangorestframework-jwt==1.11.0
 google-api-python-client==1.7.9
@@ -33,3 +34,4 @@ rsa==4.0
 six==1.12.0
 uritemplate==3.0.0
 urllib3==1.25.3
+whitenoise==4.1.3

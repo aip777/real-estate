@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -25,7 +26,7 @@ SECRET_KEY = '7m6spp570^^g6^5i%rv$yr^$fm^z0_cjj_f5@49+z_m-1wa*@2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['real-estate-ariful.herokuapp.com']
 
 
 # Application definition
@@ -39,20 +40,30 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
 
-    'pages.apps.PagesConfig',
-    'listings.apps.ListingsConfig',
-    'realtors.apps.RealtorsConfig',
-    'accounts.apps.AccountsConfig',
-    'contacts.apps.ContactsConfig',
-    'sendemail.apps.SendemailConfig',
-    'icontent.apps.IcontentConfig',
-    'profileband.apps.ProfilebandConfig',
-    'blog.apps.BlogConfig',
-    'core.apps.CoreConfig',
-    'status.apps.StatusConfig',
+    # 'pages.apps.PagesConfig',
+    # 'listings.apps.ListingsConfig',
+    # 'realtors.apps.RealtorsConfig',
+    # 'accounts.apps.AccountsConfig',
+    # 'contacts.apps.ContactsConfig',
+    # 'sendemail.apps.SendemailConfig',
+    # 'icontent.apps.IcontentConfig',
+    # 'profileband.apps.ProfilebandConfig',
+    # 'blog.apps.BlogConfig',
+    # 'core.apps.CoreConfig',
+    # 'status.apps.StatusConfig',
 
     'rest_framework',
     'crudcsv',
+    'pages',
+    'listings',
+    'realtors',
+    'contacts',
+    'sendemail',
+    'icontent',
+    'profileband',
+    'blog',
+    'core',
+    'status',
 
 
 ]
@@ -61,6 +72,7 @@ INSTALLED_APPS = [
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -74,7 +86,7 @@ ROOT_URLCONF = 'btre.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -92,7 +104,7 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
+#
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -104,7 +116,7 @@ DATABASES = {
 }
 
 
-
+#
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -112,10 +124,7 @@ DATABASES = {
 #     }
 # }
 
-import dj_database_url
-db_from_env = dj_database_url.config()
-DATABASES['default'].update(db_from_env)
-#DATABASES['default']['CONN_MAX_AGE'] = 500
+
 
 
 # Password validation
@@ -155,15 +164,58 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 
-STATIC_ROOT= os.path.join(os.path.join(BASE_DIR, 'static'))
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(os.path.join(BASE_DIR, 'btre/static'))
-]
+
+
+
+# STATIC_ROOT= os.path.join(BASE_DIR, 'static')
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'btre/static')
+# ]
+
+
+
+
+# STATIC_ROOT= os.path.join(BASE_DIR, 'static')
+# STATIC_URL = '/static/'
+#
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+# ]
+
+
 
 # Media Folder Settings
-MEDIA_ROOT = os.path.join(os.path.join(BASE_DIR, 'media'))
-MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
+
+
+# stat new setting
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+STATIC_ROOT = os.path.join(BASE_DIR, "live-static", "static-root")
+
+MEDIA_URL = "/media/"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "live-static", "media-root")
+
+# end
+
+
+
+
+
+
+
+
+
+
+
 
 # Messages
 from django.contrib.messages import constants as messages
@@ -191,4 +243,13 @@ EMAIL_USE_SSL=False
 EMAIL_USE_TLS= True
 
 
-from btre.restconf.main import *
+# from btre.restconf.main import *
+
+
+
+
+
+
+
+
+
