@@ -14,7 +14,7 @@
 
 ### Login credentials
 
-    https://repm.herokuapp.com
+    https://repm.herokuapp.com/admin/
     
     username: ariful
     password: Test123123@@
