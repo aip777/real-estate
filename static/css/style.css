@@ -97,6 +97,6 @@ img {
   #showcase-inner h1 {
     font-size: 40px; } }
 
-*, ::before, ::after{
-  box-sizing: unset;
+.navbar {
+  text-transform: capitalize;
 }
