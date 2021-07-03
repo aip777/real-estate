@@ -13,10 +13,9 @@ class ContentAdmin(admin.ModelAdmin):
   search_fields = ('title', 'header_email', 'header_phone')
   list_per_page = 25
 
-  # def has_add_permission(self, request):
-  #   return False
-
-
-  # def has_delete_permission(self, request, obj=None):
-  #   return False
+  def has_add_permission(self, request):
+    return False
+    
+  def has_delete_permission(self, request, obj=None):
+    return False
 admin.site.register(Content, ContentAdmin)
